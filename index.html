@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chikai Shang</title>
+
+  <!-- meta tags -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Chikai Shang's homepage">
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="jemdoc.css" type="text/css">
+
+  <!-- custom style -->
+  <style>
+    :root {
+      --font-body:         16px;
+      --font-papertitle:   14.8px;
+      --font-authors:      14.8px;
+      --font-venue:        14.8px;
+      --font-links:        14.8px;
+
+      --pub-img-width:     190px;
+      --pub-img-height:    130px;
+
+      --pub-row-gap:       4.7px;
+      --h1-margin-top:     0.5em;
+      --h1-margin-bottom:  0.4em;
+      --h2-margin-top:     0.75em;
+      --h2-margin-bottom:  0.5em;
+      --footer-margin-top: 50px;
+    }
+
+    body {
+      font-size: var(--font-body);
+      padding-left: 465px;  /* left padding */
+      padding-right: 465px;  /* right padding */
+    }
+
+    h1 { margin-top: var(--h1-margin-top); margin-bottom: var(--h1-margin-bottom); }
+    h2 { margin-top: var(--h2-margin-top); margin-bottom: var(--h2-margin-bottom); }
+
+    table.pub-table {
+      width: 100%;
+      border: 0;
+      border-spacing: 0;
+      border-collapse: separate;
+    }
+
+    table.pub-table td { vertical-align: middle; }
+
+    table.pub-table td.pub-img {
+      padding: 10px 20px 10px 0;
+      width: 22%;
+    }
+
+    table.pub-table td.pub-img img {
+      display: block;
+      width: var(--pub-img-width);
+      height: var(--pub-img-height);
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 4px;
+    }
+
+    table.pub-table td.pub-content {
+      padding: 10px 0 10px 10px;
+      width: 78%;
+      /* text-align: justify; */
+      /* hyphens: auto; */
+    }
+
+    .pub-content .papertitle  { display: block; margin-bottom: var(--pub-row-gap); }
+    .pub-content .pub-authors { display: block; margin-bottom: var(--pub-row-gap); font-size: var(--font-authors); }
+    .pub-content .pub-venue   { display: block; margin-bottom: var(--pub-row-gap); font-size: var(--font-venue); }
+
+    .papertitle {
+      font-size: var(--font-papertitle);
+      font-weight: bold;
+      color: #224b8d;
+    }
+    .papertitle:hover { color: #f09228; }
+
+    .pub-links a { font-size: var(--font-links); }
+
+    p {
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    /* for recent news */
+    .news-list {
+      list-style-type: none;
+      padding: 0 10px 0 10px;
+      margin: 0;
+      max-height: 125px;
+      overflow-y: auto;
+      border-left: 4px solid #2c3e50;
+      scrollbar-width: thin;
+      scrollbar-color: #2c3e50 #e9ecef;
+    }
+    .news-list::-webkit-scrollbar       { width: 8px; }
+    .news-list::-webkit-scrollbar-track { background: #e9ecef; border-radius: 4px; }
+    .news-list::-webkit-scrollbar-thumb { background: #2c3e50; border-radius: 4px; }
+    .news-list::-webkit-scrollbar-thumb:hover { background: #1a252f; }
+    .news-list li { margin-top: 0; margin-bottom: 15px; }
+  </style>
+</head>
+
+<body>
+<div id="layout-content" style="margin-top:25px"></div>
+
+<table>
+  <tbody>
+  <tr>
+    <td width="670">
+      <div id="toptitle">
+        <h1>Chikai Shang (尚驰凯)</h1>
+      </div>
+      <!--<h4>Master's Student</h4>-->
+      <p>
+        Masters Student<br>
+        School of Informatics, Xiamen University<br>
+        Email: <a href="mailto:ckshang12@gmail.com">ckshang12@gmail.com<br>
+        <a href="https://scholar.google.com/citations?user=cgO1rbAAAAAJ&hl=en" target="_blank">[Google Scholar]</a>
+        <a href="https://github.com/ckshang" target="_blank">[GitHub]</a>
+      </p>
+    </td>
+    <td></td>
+    <td>
+      <img src="imgs/ckshang_nus.jpg" border="0" height="225" style="border-radius:6px;">
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<h2>About Me</h2>
+<p>
+  I am a first-year Masters student in the School of Informatics at <a href="https://www.xmu.edu.cn/" target="_blank">Xiamen University</a>, supervised by Prof. <a href="https://jasonyanglu.github.io/" target="_blank">Yang Lu</a>.
+</p>
+<p>
+  I am broadly interested in <b>Parameter-Efficient Fine-Tuning</b>, <b>Long-Tailed Learning</b>, and <b>Federated Learning</b>. My goal is to develop robust fine-tuning frameworks that enable foundation models to generalize in complex, real-world settings.
+</p>
+
+<h2>Recent News</h2>
+<ul class="news-list">
+  <li>[2026.02] Our papers <a href="https://github.com/zhangruichi/CUE/" target="_blank">CUE</a> and <a href="https://github.com/shihaohou/FedPuReL/" target="_blank">FedPuReL</a> are accepted at CVPR 2026!</li>
+  <li>[2025.06] Our paper <a href="https://arxiv.org/abs/2503.06901/" target="_blank">PRO-VPT</a> is accepted at ICCV 2025!</li>
+  <li>[2024.03] Our paper <a href="https://arxiv.org/abs/2404.01224/" target="_blank">CoPSL</a> is accepted at IJCNN 2024 (<b><font color="red">Oral</font></b>)!</li>
+</ul>
+
+<h2>Selected Publications</h2>
+<p style="margin-bottom:0.5em;">†: equal contribution &nbsp;&nbsp; ‡: corresponding author</p>
+
+<table class="pub-table">
+  <tbody>
+
+    <!-- CUE -->
+    <tr>
+      <td class="pub-img">
+        <img src="imgs/cvpr26_cue.png" alt="CUE">
+      </td>
+      <td class="pub-content">
+        <a href="#"><span class="papertitle">CUE: Concept-Aware Multi-Label Expansion to Mitigate Concept Confusion in Long-Tailed Learning</span></a>
+        <span class="pub-authors">Ruichi Zhang<sup>†</sup>, <b>Chikai Shang<sup>†</sup></b>, Jiacheng Yang, Mengke Li, Yang Zhou, Junlong Gao, Yang Lu<sup>‡</sup></span>
+        <span class="pub-venue"><b>CVPR 2026</b></span>
+        <span class="pub-links">
+          <!-- [<a href="#">Paper</a>] -->
+          [<a href="https://github.com/zhangruichi/CUE/" target="_blank">Code</a>]
+        </span>
+      </td>
+    </tr>
+
+    <!-- FedPuReL -->
+    <tr>
+      <td class="pub-img">
+        <img src="imgs/cvpr26_fedpurel.png" alt="FedPuReL">
+      </td>
+      <td class="pub-content">
+        <a href="#"><span class="papertitle">Fine-Tuning Impairs the Balancedness of Foundation Models in Long-Tailed Personalized Federated Learning</span></a>
+        <span class="pub-authors">Shihao Hou, <b>Chikai Shang</b>, Zhiheng Yang, Jiacheng Yang, Xinyi Shang, Junlong Gao, Yiqun Zhang, Yang Lu<sup>‡</sup></span>
+        <span class="pub-venue"><b>CVPR 2026</b></span>
+        <span class="pub-links">
+          <!-- [<a href="#">Paper</a>] -->
+          [<a href="https://github.com/shihaohou/FedPuReL/" target="_blank">Code</a>]
+        </span>
+      </td>
+    </tr>
+
+    <!-- PRO-VPT -->
+    <tr>
+      <td class="pub-img">
+        <img src="imgs/iccv25_provpt.png" alt="PRO-VPT">
+      </td>
+      <td class="pub-content">
+        <a href="https://arxiv.org/abs/2503.06901/" target="_blank"><span class="papertitle">PRO-VPT: Distribution-Adaptive Visual Prompt Tuning via Prompt Relocation</span></a>
+        <span class="pub-authors"><b>Chikai Shang</b>, Mengke Li, Yiqun Zhang, Zhen Chen, Jinlin Wu, Fangqing Gu<sup>‡</sup>, Yang Lu<sup>‡</sup>, Yiu-ming Cheung</span>
+        <span class="pub-venue"><b>ICCV 2025</b></span>
+        <span class="pub-links">
+          [<a href="https://arxiv.org/abs/2503.06901/" target="_blank">Paper</a>]
+          [<a href="https://github.com/ckshang/PRO-VPT/" target="_blank">Code</a>]
+        </span>
+      </td>
+    </tr>
+
+    <!-- CoPSL -->
+    <tr>
+      <td class="pub-img">
+        <img src="imgs/ijcnn24_copsl.png" alt="CoPSL">
+      </td>
+      <td class="pub-content">
+        <a href="https://arxiv.org/abs/2404.01224/" target="_blank"><span class="papertitle">Collaborative Pareto Set Learning in Multiple Multi-Objective Optimization Problems</span></a>
+        <span class="pub-authors"><b>Chikai Shang</b>, Rongguang Ye, Jiaqi Jiang, Fangqing Gu<sup>‡</sup></span>
+        <span class="pub-venue"><b>IJCNN 2024</b> &nbsp; (<b><font color="red">Oral</font></b>)</span>
+        <span class="pub-links">
+          [<a href="https://arxiv.org/abs/2404.01224/" target="_blank">Paper</a>]
+          [<a href="https://github.com/ckshang/CoPSL/" target="_blank">Code</a>]
+        </span>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h2>Awards &amp; Honors</h2>
+<ul>
+  <li>
+    Huabing Qiu Scholarship, 2026
+  </li>
+  <li>
+    National Scholarship, 2024
+  </li>
+</ul>
+
+<div id="footer" style="text-align: center; margin-top: var(--footer-margin-top); color: #999999; font-size: 0.9rem;">
+  © <script>document.write(new Date().getFullYear())</script> Chikai Shang. Last updated: <span id="last-update"></span>
+</div>
+<script>
+  const d = new Date(document.lastModified);
+  const months = ['January','February',' March','April','May','June','July','August','September','October','November','December'];
+  document.getElementById('last-update').textContent = months[d.getMonth()] + ' ' + d.getFullYear() + '.';
+</script>
+
+</body>
+</html>
