@@ -14,11 +14,11 @@
   <!-- custom style -->
   <style>
     :root {
-      --font-body:         17px;
-      --font-papertitle:   15.8px;
-      --font-authors:      15.8px;
-      --font-venue:        15.8px;
-      --font-links:        15.8px;
+      --font-body:         16.5px;
+      --font-papertitle:   15.3px;
+      --font-authors:      15.3px;
+      --font-venue:        15.3px;
+      --font-links:        15.3px;
 
       --pub-img-width:     205px;
       --pub-img-height:    130px;
@@ -33,7 +33,7 @@
 
     body {
       font-size: var(--font-body);
-      max-width: 870px;
+      max-width: 890px;
       margin-left: auto;
       margin-right: auto;
       padding-left: 24px;
@@ -107,13 +107,25 @@
     .news-list::-webkit-scrollbar-thumb { background: #2c3e50; border-radius: 4px; }
     .news-list::-webkit-scrollbar-thumb:hover { background: #1a252f; }
     .news-list li { margin-top: 0; margin-bottom: 15px; }
+
+    @media (max-width: 600px) {
+      table.pub-table td.pub-img     { display: none; }
+      table.pub-table td.pub-content { width: 100%; padding-left: 0; }
+
+      /* 头像区域：table 改为纵向堆叠，图片缩小 */
+      table.profile-table          { display: block; }
+      table.profile-table tbody    { display: block; }
+      table.profile-table tr       { display: block; }
+      table.profile-table td       { display: block; width: 100% !important; }
+      table.profile-table td img   { height: 180px; width: auto; }
+    }
   </style>
 </head>
 
 <body>
 <div id="layout-content" style="margin-top:25px"></div>
 
-<table>
+<table class="profile-table">
   <tbody>
   <tr>
     <td width="670">
@@ -235,7 +247,7 @@
   </li>
 </ul>
 
-<div id="footer" style="text-align: center; margin-top: var(--footer-margin-top); color: #999999; font-size: 1.0rem;">
+<div id="footer" style="text-align: center; margin-top: var(--footer-margin-top); color: #999999; font-size: 0.95rem;">
   © <script>document.write(new Date().getFullYear())</script> Chikai Shang. Last updated: <span id="last-update"></span>
 </div>
 <script>
